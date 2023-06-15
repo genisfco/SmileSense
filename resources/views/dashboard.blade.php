@@ -9,8 +9,9 @@
 
 
 <x-app-layout>
+        
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight bg-neutral-200">
             {{ __('Consulta') }}
         </h2>
     </x-slot>
@@ -24,11 +25,23 @@
                         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Procedimentos</h1>
                         <br>
                         
-                   <p>{{ __(Auth::user()->proced) }}</p>
+                   <p>{{ __(Auth::user()->procedi) }}</p>
+                   <br>
+
+                   <p>
+                   <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Agendamentos</h1>
+                        <br>
+
+                        <p>{{ __(Auth::user()->consulta) }}</p>
+
+                   </p>
+
+                   <p>
+                    
                 </div>
             </div>
         </div>
     </div>
 
 </x-app-layout>
-
+</body>
